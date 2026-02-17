@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        form{
+            background-image: url("background.jpg");
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: red;
+            margin-top: 75px;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: red;
+            text-shadow: 4px 4px 5px grey;
+            border-radius: 5px;
+        }
+        h1:hover{
+            background-color: white;
+            color:black;
+            text-shadow:4px 4px 5px rgb(245, 121, 121);
+        }
+        input{
+            color: red;
+            padding:5px;
+        }
+        input:focus{
+            border: 2px solid rgb(173, 141, 141);
+            border-radius: 5px;
+            background-color: black;
+        }
+        button{
+            border: 3px solid red;
+            color:white;
+            background-color: black;
+            text-align: center;
+            text-shadow: 6px 6px 4px grey;
+            padding: 10px;
+            font-size: 10px;
+            border-radius: 5px;
+        }
+        button:hover{
+            transform: scale(1.5);
+            color:black;
+            background-color: red;
+            border: 5px solid white;
+        }
+        select{
+            font-family: 'Times New Roman', Times, serif;
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Tech Event 2026 Registration</h1>
+    <form action="success.html" target="_blank" method="post">
+        <label>Name : </label><input type="text" name="name" placeholder="Enter Your Name" required><br><br>
+        <label>Mobile Number : </label><input type="number" name="mobile" placeholder="Enter Your Mobile Number" required><br><br>
+        <label>Degree : </label><input type="text" name="degree" placeholder="Enter Your Degree" required><br><br>
+        <label>Year : </label><select>
+            <option selected disabled>Select Year</option>
+            <option>I year</option>
+            <option>II year</option>
+            <option>III year</option>
+            <option>IV year</option>
+        </select><br><br>
+        <label>Event name:</label><select>
+            <option selected disabled>Select Event </option>
+            <option>Coding Contest</option>
+            <option>AI Workshop</option>
+            <option>Robotic Exhibition</option>
+        </select><br><br>
+        <label>Suggestions : </label><textarea style="width:300px; height: 100px;"></textarea><br><br>
+        <button>Register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,292 @@
+h1{
+    color: rgb(226, 54, 2);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(56, 52, 52);
+    border-radius: 10px;
+    text-shadow: 4px 4px 3px rgb(175, 55, 11);
+    font-size: 40px;;
+}
+h1:hover{
+    color:black;
+    background-color: white;
+}
+.menu{
+    color: rgb(255, 253, 253);
+    background-color: tomato;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 1px solid red;
+    border-radius: 100px;
+}
+li{
+    display:inline-block;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left: 200px;
+    
+}
+li:hover{
+    color:rgb(8, 8, 8);
+    scale: 1.5;
+    background-color: rgb(226, 54, 2);
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: 3px 3px 4px grey;
+}
+.menu:hover{
+    background-color: rgb(231, 124, 124);
+}
+ul{
+    list-style-type:none;
+}
+
+#headSection{
+    display:flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    background-image: url('background.jpg');
+    height:300px;
+}
+.welcome{
+    font-size: 18px;
+    color: rgb(235, 23, 23);
+    animation-name: textChange;
+    animation-duration:30s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+    white-space:nowrap;
+}
+@keyframes textChange{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.AboutEvent{
+    text-align: center;
+    color: rgb(226, 54, 2);
+    width:1000px;
+    border:2px solid black;
+    border-radius: 10px;
+    margin-left:150px;
+}
+.AboutEvent:hover{
+    box-shadow: 4px 4px 3px grey;
+    color:white;
+    background-color: black;
+    scale:1.2;
+    margin-top: 20px;
+    border: 2px solid rgb(226, 54, 2);
+    border-radius: 50px;
+
+}
+h2{
+    text-align: center;
+    color:orangered;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px 3px grey;
+}
+
+#features{
+    display:flex;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#features img{
+    height:300px;
+    width:300px;
+    object-fit:fill;
+    border:2px solid rgb(194, 23, 23);
+    border-radius: 4px;
+    margin-left:8px;
+}
+#features img:hover{
+    height:300px;
+    width:300px;
+    border:2px solid rgb(243, 122, 122);
+    border-radius: 4px;
+    box-shadow: 5px 5px 3px grey;
+    transform: translateY(-20px);
+}
+
+#features h3{
+    text-align: center;
+    color:rgb(209, 56, 10);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#EventDetails{
+    display: grid;
+    grid-template-columns:repeat(3,500px);  
+    margin-left: 10px;
+    background-image: url('background.jpg');
+}
+
+#EventDetails img{
+    height:300px;
+    width:300px;
+    border:2px solid whitesmoke;
+    margin-left: 5px;
+    object-fit:contain;
+}
+
+#EventDetails img:hover{
+    height:300px;
+    width:300px;
+    transform: translateX(10px);
+    box-shadow: 6px 6px 3px grey;
+}
+
+#EventDetails p{
+    text-align: left;
+    color: orangered;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+#RegistrationTable{
+    
+}
+#RegistrationTable table{
+    border-collapse: collapse;
+    margin: 50px 0px 0px 350px;
+}
+tr,th,td{
+    border:2px solid rgb(247, 9, 9);
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+th{
+    background-color: rgb(228, 149, 75);
+}
+tr{
+    background-color: rgb(240, 81, 7);
+}
+tr:hover{
+    background-color: rgb(247, 9, 9);
+    color:white;
+}
+th:hover{
+    background-color:rgb(240, 81, 7) ;
+}
+#buttons{
+    margin:50px 0px 0px 500px;
+}
+button{
+    color:white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid ;
+    padding:10px;
+    font-size: 30px;
+    opacity:0.5;
+    animation-name: buttonchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+button:hover{
+    color:white;
+    background-color: rgb(235, 72, 72);
+    border: 2px solid white;
+    border-radius: 50px;
+    scale: 1.2;
+    opacity:1;
+}
+
+@keyframes buttonchange{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#contact{
+    background-image:url('background.jpg') ;
+    text-align:center;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 5px;
+}
+
+.help{
+    height: 70px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    position:fixed;
+    z-index: 10;
+    text-align: center;
+}
+.help:hover{
+    background-color: rgb(253, 250, 249);
+}
+
+@media(max-width:400px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu ul{
+        text-align: center;
+        padding:0px;
+        margin: 0px;
+    }
+    .menu li{
+        text-align: center;
+        padding:0px;
+        margin: 0px;
+    }
+    #features{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    #features img{
+        width: 90%;
+    }
+
+    #EventDetails{
+        grid-template-columns: 1fr;
+    }
+    
+    .AboutEvent {
+        width: 95%;
+        margin: 10px auto; 
+        font-size: 16px; 
+    } 
+    #RegistrationTable table {
+        width: 100%;  
+        margin: 10px auto; 
+        font-size: 12px; 
+    }
+    #contact{
+        text-align: center;
+    }
+    #contact pre{
+        text-align: center;
+        margin: 0px auto;
+    }
+    #contact div{
+        text-align: center;
+        margin: 0px auto;
+    }
+}
+
